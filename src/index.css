@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-shield-navy text-slate-100 antialiased selection:bg-shield-cyan selection:text-white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom parent-friendly high-contrast cards & utility styles */
+.glass-panel {
+  background: rgba(28, 37, 65, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(33, 44, 76, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Risk glow styles */
+.glow-critical {
+  box-shadow: 0 0 25px -5px rgba(230, 57, 70, 0.45);
+  border-color: rgba(230, 57, 70, 0.5);
+}
+
+.glow-high {
+  box-shadow: 0 0 25px -5px rgba(244, 162, 97, 0.45);
+  border-color: rgba(244, 162, 97, 0.5);
+}
+
+.glow-safe {
+  box-shadow: 0 0 25px -5px rgba(42, 157, 143, 0.4);
+  border-color: rgba(42, 157, 143, 0.5);
+}
+
+/* Smooth mobile-first scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+::-webkit-scrollbar-thumb {
+  background: #273852;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #028090;
+}

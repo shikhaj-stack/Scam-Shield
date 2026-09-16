@@ -1,0 +1,16 @@
+{
+  "name": "ScamShield — Digital Safety Companion for Parents",
+  "short_name": "ScamShield",
+  "description": "A Digital Bodyguard for Parents. Check suspicious messages, links and screenshots before you act.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B132B",
+  "theme_color": "#028090",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
